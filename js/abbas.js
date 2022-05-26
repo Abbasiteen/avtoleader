@@ -17,3 +17,16 @@ function initMap() {
 
 window.initMap = initMap;
 
+
+let form = document.querySelector('.form')
+form.addEventListener('submit', (e) => {
+   e.preventDefault()
+
+   let nameInp = document.querySelector('.form-control')
+   let telInp = document.querySelector('.form_user')
+   let emailInp = document.querySelector('.form_email')
+   let messengeInp = document.querySelector('#form_mes')
+
+  console.log('Ism: ' + nameInp.value + '   Tel:' + telInp.value + '   Email:' + ' ' + emailInp.value + '   Messenge:' + messengeInp.value);
+})
+
