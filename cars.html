@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="./css//Abbas.css">
+    <link rel="stylesheet" href="./css/jasur.css">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -48,53 +50,45 @@
       </div>
 
 
-
-      <header class="site-navbar site-navbar-target" role="banner">
-
-        <div class="container">
-          <div class="row align-items-center position-relative">
-
-            <div class="col-3 ">
-              <div class="site-logo">
-                <a href="index.html">CarRent</a>
+      <div class="header_abbas">
+        <div class="container1">
+          <div class="navbar">
+              <div class="menu">
+                  <h3 class="logo">AutoLeader</h3>
+                  <div class="hamburger-menu">
+                      <div class="bar"></div>
+                  </div>
               </div>
-            </div>
-
-            <div class="col-9  text-right">
-              
-
-              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
-
-              
-
-              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li><a href="index.html" class="nav-link">Home</a></li>
-                  <li class="active"><a href="cars.html" class="nav-link">Cars</a></li>
-                  <li><a href="about.html" class="nav-link">About</a></li>
-                  <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-
-            
+          </div>
+          <div class="main-container1">
+              <div class="main">
+                  <div class="header1">
+                    <video style="position: absolute;top: 0px;width: 100vw;"autoplay muted>
+                      <source src="./video/body.mp4" type="video/mp4">
+                      <source src="movie.ogg" type="video/ogg">
+                    </video>
+                    <div class="cars_title">
+                      <h1>Our For Rent Cars</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    </div>
+              </div>
+              <div class="shadow one"></div>
+              <div class="shadow two"></div>
+          </div>
+          <div class="links">
+              <ul>
+                  <li class="active"><a href="index.html" style="--i: 0.1s; color: #fff;" class="nav-link">Home</a></li>
+                        <!-- <li><a href="services.html" style="--i: 0.1s" class="nav-link">Services</a></li> -->
+                        <li><a href="cars.html" style="--i: 0.1s; color: #dc3545;" class="nav-link">Cars</a></li>
+                        <li><a href="about.html" style="--i: 0.1s" class="nav-link">About</a></li>
+                        <!-- <li><a href="blog.html" style="--i: 0.1s" class="nav-link">Blog</a></li> -->
+                        <li><a href="contact.html" style="--i: 0.1s" class="nav-link">Contact</a></li>
+              </ul>
           </div>
         </div>
-
-      </header>
-
-    <div class="ftco-blocks-cover-1">
-      <div class="ftco-cover-1 overlay innerpage" style="background-image: url('images/our\ cars\ page.JPG')">
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-lg-6 text-center">
-              <h1>Our For Rent Cars</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
+        
         </div>
-      </div>
-    </div>
 
 
 
@@ -834,7 +828,31 @@
     </div>
 
     
+    </div>
 
+    
+<div id="YMapsID" style="width:100%;height:700px;"></div>
+ 
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+  ymaps.ready(function () { 
+ 
+ var myMap = new ymaps.Map("YMapsID", {
+     center: [55.76, 37.64],
+     zoom: 11,
+ });
+
+ // создание маркера
+ var myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+    content: 'название маркера',
+    balloonContent: 'html-контент',
+ });
+
+ // добавление маркера на карту
+ myMap.geoObjects.add(myPlacemark);
+ 
+});
+</script>
     <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -902,9 +920,54 @@
       </div>
     </footer>
 
-    </div>
+    <script>
+      ymaps.ready(init);
 
+function init () {
+    var myMap = new ymaps.Map('map', {
+            center: [55.95, 32.44],
+            zoom: 2
+        }),
+
+        myPlacemark1 = new ymaps.Placemark([55.85, 60.64], {
+            balloonContent: 'Маленькая иконка'
+        }, {
+            iconLayout: 'default#image',
+            iconImageClipRect: [[0,0], [26, 47]],
+            iconImageHref: 'images/sprite.png',
+            iconImageSize: [15, 27],
+            iconImageOffset: [-15, -27],
+        }),
+
+        myPlacemark2 = new ymaps.Placemark([55.85, 32.64], {
+            balloonContent: 'Средняя иконка'
+        }, {
+            iconLayout: 'default#image',
+            iconImageClipRect: [[34,0], [62, 46]],
+            iconImageHref: 'images/sprite.png',
+            iconImageSize: [26, 46],
+            iconImageOffset: [-26, -46]
+        }),
+
+        myPlacemark3 = new ymaps.Placemark([55.85, 1.0], {
+            balloonContent: 'Большая иконка'
+        }, {
+            iconLayout: 'default#image',
+            iconImageClipRect: [[69,0], [97, 46]],
+            iconImageHref: 'images/sprite.png',
+            iconImageSize: [35, 63],
+            iconImageOffset: [-35, -63]
+        });
+
+    myMap.geoObjects.add(myPlacemark1)
+        .add(myPlacemark2)
+        .add(myPlacemark3);
+}
+
+    </script>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jasur.js"></script>
+    <script src="./js/abbas.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -921,7 +984,6 @@
 
     <script src="js/main.js"></script>
 
-  </body>
-
+</body>
 </html>
 
