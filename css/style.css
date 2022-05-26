@@ -2319,7 +2319,10 @@ h1, h2, h3, h4, h5,
 }
 
 .service-1 .service-1-contents h3, .service-1 .service-1-contents p {
-  color: #fff;
+  color: #000;
+}
+.service-1-contents {
+  width: 100%;
 }
 
 .service-1 .service-1-contents h3 {
