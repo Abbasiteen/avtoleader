@@ -275,12 +275,12 @@ html {
   background: #007bff;
 }
 
-body {
+/* body {
   line-height: 1.7;
   color: #364d59 !important;
   font-weight: 300;
   font-size: 1rem;
-}
+} */
 
 ::-moz-selection {
   background: #000;
@@ -2243,7 +2243,7 @@ h1, h2, h3, h4, h5,
 }
 
 .how-it-works .step {
-  width: 200px;
+  width: 250px;
   display: inline-block;
   text-align: center;
   position: relative;
