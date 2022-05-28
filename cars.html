@@ -831,19 +831,18 @@
     </div>
 
     
-<div id="YMapsID" style="width:100%;height:700px;"></div>
  
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script>
   ymaps.ready(function () { 
  
  var myMap = new ymaps.Map("YMapsID", {
-     center: [55.76, 37.64],
+     center: [41.292071, 69.362916],
      zoom: 11,
  });
 
  // создание маркера
- var myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+ var myPlacemark = new ymaps.Placemark([41.292071, 69.362916], {
     content: 'название маркера',
     balloonContent: 'html-контент',
  });
@@ -854,7 +853,8 @@
 });
 </script>
     <footer class="site-footer">
-      <div class="container">
+<div id="YMapsID" style="width:60%;height:700px; margin: 0 auto; margin-bottom: 8rem;"></div>
+<div class="container">
         <div class="row">
           <div class="col-lg-3">
             <h2 class="footer-heading mb-4">About Us</h2>
@@ -925,11 +925,11 @@
 
 function init () {
     var myMap = new ymaps.Map('map', {
-            center: [55.95, 32.44],
+            center: [41.292071, 69.362916],
             zoom: 2
         }),
 
-        myPlacemark1 = new ymaps.Placemark([55.85, 60.64], {
+        myPlacemark1 = new ymaps.Placemark([41.292071, 69.362916], {
             balloonContent: 'Маленькая иконка'
         }, {
             iconLayout: 'default#image',
