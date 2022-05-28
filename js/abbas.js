@@ -27,7 +27,13 @@ form.addEventListener('submit', (e) => {
    let emailInp = document.querySelector('.form_email')
    let messengeInp = document.querySelector('#form_mes')
 
-  console.log('Ism: ' + nameInp.value + '   Tel:' + telInp.value + '   Email:' + ' ' + emailInp.value + '   Messenge:' + messengeInp.value);
+  // console.log('Ism: ' + nameInp.value + '   Tel:' + telInp.value + '   Email:' + ' ' + emailInp.value + '   Messenge:' + messengeInp.value);
+
+  nameInp.value = ''
+  telInp.value = ''
+  emailInp.value = ''
+  messengeInp.value = ''
+
 })
 
 
