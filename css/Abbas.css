@@ -727,7 +727,9 @@ body {
   /* #map { */
     /* display: none; */
   /* } */
-
+   .header1 video{
+     display: none;
+   }
     .header1_img{
       display: block;
     }
