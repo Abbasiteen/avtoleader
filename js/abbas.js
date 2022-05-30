@@ -36,6 +36,7 @@ form.addEventListener('submit', (e) => {
 
 })
 
+// carousel
 
 jQuery(document).ready(function($) {
   "use strict";
@@ -62,4 +63,3 @@ jQuery(document).ready(function($) {
       }
   });
 });
-
