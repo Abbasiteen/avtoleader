@@ -911,7 +911,6 @@ z-index: 8888;
 .trip-form {
   display: block;
 }
-
   /* .header_abbas {
      display: none; 
   } */
@@ -934,9 +933,6 @@ z-index: 8888;
   /* #map { */
     /* display: none; */
   /* } */
-  .header1 video{
-   display: none;
-  }
   .header1_img{
     display: block;
   }
