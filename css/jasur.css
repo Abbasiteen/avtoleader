@@ -17,6 +17,16 @@
 .cars_title p {
     color: #fff;
 }
-.map {
-    margin-left: 650px;
+
+#YMapsID {
+    width:80%;
+    height:45vh; 
+    margin: 0 auto; 
+    margin-bottom: 8rem;
+}
+
+@media (max-width: 991px) {
+    #YMapsID {
+     width: 100%;
+    }
 }
