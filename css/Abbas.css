@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Recursive:wght@400;500;600;700;800;900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -318,7 +319,7 @@ body {
 /* DIYOR'S MEDIA */
 
 
-@media(max-width: 998px){
+@media(max-width: 991px){
   .header_abbas  .links {
     position: absolute;
     width: 30%;
@@ -692,7 +693,7 @@ z-index: 8888;
 
 .slider__navi a {
 	display: block;
-	width: 50px;
+	width: 30px;
 	height: 15px;
 	margin: 20px 0;
 	text-indent: -9999px;
@@ -936,7 +937,16 @@ z-index: 8888;
   .header1_img{
     display: block;
   }
-
+  .slider__navi a {
+    width: 20px;
+    height: 10px;
+  }
+  .header_abbas .logo {
+    font-size: 4vw;
+  }
+  .ov_inp {
+    width: 40vw;
+  }
 }
 .item{
   background-color: #fff;
@@ -1013,4 +1023,29 @@ display: inline-block;
   width: 20px;
   border-radius: 50%;
 } */
+@media screen and (max-width: 500px) {
+  .pokemon__img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+	  bottom: -20px;
+	  right: 50%;
+    transform: translateX(50%);
+  }
+  .ov_inp {
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+  }
+  .ov_h2 {
+    font-size: 18px;
+  }
+  .inp_text {
+    font-size: 12px;
+  }
+  .inp {
+    font-size: 12px;
+  }
+  
+}
 
