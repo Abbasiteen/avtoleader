@@ -133,14 +133,16 @@ body {
 }
 
 
-.overlay {
-  width: 98%;
-  margin: 0 1%;
+.overlay12 {
+  border: 1px solid red;
+  width: 90%;
+margin-left: 5%;
   height: auto;
   background-color: #fff;
-  position: absolute;
+  /* position: absolute; */
   z-index: 10;
-  top: -120px;
+  position: relative;
+   top: -120px; 
   border-radius: 15px;
   padding: 20px 0 80px 0; 
 }
@@ -951,7 +953,7 @@ z-index: 8888;
 .item{
   background-color: #fff;
 }
-/* .shadow-effect {
+.shadow-effect {
   background: #fff;
   padding: 20px;
   border-radius: 4px;
@@ -1022,7 +1024,7 @@ display: inline-block;
   transition: all 250ms ease-out 0s;
   width: 20px;
   border-radius: 50%;
-} */
+}
 @media screen and (max-width: 500px) {
   .pokemon__img {
     width: 100px;
