@@ -117,9 +117,10 @@ body {
   /* background: url("https://images.hdqwalls.com/wallpapers/bmw-m2-nfs-raining-4k-ww.jpg") no-repeat top center/cover; */
   position: relative;
 }
-.header1_img{
+/* .header1_img{
+  background-image: url('../images/hero_1.jpg');
   display: none;
-}
+} */
 
 .header_abbas .overlay2 {
   position: absolute;
@@ -324,7 +325,7 @@ margin-left: 5%;
 @media(max-width: 991px){
   .header_abbas  .links {
     position: absolute;
-    width: 30%;
+    /* width: 100%; */
     right: 0;
     top: 0;
     height: 100vh;
@@ -333,12 +334,13 @@ margin-left: 5%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 10px;
+    margin: 0% auto;
+     /* margin-left: 10px;  */
   }
   .header_abbas .links a {
     text-decoration: none;
     width: 110%;
-    background-color: rgba(33, 33, 33, 0.745);
+    /* background-color: rgba(33, 33, 33, 0.745); */
     color: #fff;
     text-align: center;
     border-radius: 15px;
@@ -352,7 +354,7 @@ margin-left: 5%;
     opacity: 0;
     transform: translateY(10px);
     animation: hide 0.5s forwards ease;
-  }
+  } 
 }
 
 
@@ -1048,7 +1050,31 @@ display: inline-block;
   .inp {
     font-size: 12px;
   }
-  
+  .header_abbas  .container1.active .main{
+    opacity: 0;
+  }
+  .header_abbas  .shadow{
+    display: none;
+  }
+  .header_abbas  .links{
+    width: 100%;
+    display: flex;  
+    text-align: center;
+    
+    justify-content: center;
+  }
+  .header_abbas{
+    width: 100vw;
+    height: 100vh;
+   
+    background-size: 100% 100%;
+
+  }
+  .header1_img{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }
 }
 .cards12{
   display: grid;
@@ -1069,6 +1095,7 @@ display: inline-block;
   bottom: 30px;
   right: 30px;
 }
+
 @media (max-width:1100px) {
   .cards12{
 
