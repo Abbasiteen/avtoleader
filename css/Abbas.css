@@ -117,10 +117,10 @@ body {
   /* background: url("https://images.hdqwalls.com/wallpapers/bmw-m2-nfs-raining-4k-ww.jpg") no-repeat top center/cover; */
   position: relative;
 }
-/* .header1_img{
+.header1_img{
   background-image: url('../images/hero_1.jpg');
   display: none;
-} */
+}
 
 .header_abbas .overlay2 {
   position: absolute;
@@ -201,8 +201,10 @@ margin-left: 5%;
   background-color: #fff;
   color: #e20f2f;
 }
-/* .header_abbos .cars_title{
-  position: absolute;
+.header_abbos .cars_title{
+  font-size: 4.5vw;
+  
+  /* position: absolute;
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -211,8 +213,8 @@ margin-left: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-directi
-} */
+  flex-directi */
+}
 
 
 .header_abbas  .inner {
@@ -941,9 +943,9 @@ z-index: 8888;
   /* #map { */
     /* display: none; */
   /* } */
-  .header1_img{
+  /* .header1_img{
     display: block;
-  }
+  } */
   .slider__navi a {
     width: 20px;
     height: 10px;
@@ -1081,6 +1083,19 @@ display: inline-block;
     width: 100vw;
     height: 100vh;
     display: block;
+  }
+  .video{
+    display: none;
+  }
+  .video_bg{
+    display: none;
+  }
+  /* ._bg{
+    display: none;
+  } */
+  .main-container1{
+    /* background-image: url('../images/hero_1.jpg'); */
+    background-color: rgba(4, 0, 255, 0.866);
   }
 }
 .cards12{
