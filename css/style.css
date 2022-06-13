@@ -242,7 +242,7 @@ html {
 }
 
 .primary-black--hover:hover {
-  background: #000;
+   background: #232427;;
   color: #fff;
 }
 
@@ -284,12 +284,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #000;
+   background: #232427;;
   color: #fff;
 }
 
 ::selection {
-  background: #000;
+   background: #232427;;
   color: #fff;
 }
 
@@ -319,7 +319,7 @@ h1, h2, h3, h4, h5,
 }
 
 .bg-black {
-  background: #000 !important;
+   background: #232427; !important;
 }
 
 .color-black-opacity-5 {
@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5,
 }
 
 .bg-black {
-  background: #000;
+   background: #232427;;
 }
 
 .form-control {
@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5,
 
 .site-footer {
   padding: 4em 0;
-  background: #000;
+   background: #232427;;
 }
 
 @media (min-width: 768px) {
@@ -421,7 +421,7 @@ h1, h2, h3, h4, h5,
 
 .bg-text-line {
   display: inline;
-  background: #000;
+   background: #232427;;
   -webkit-box-shadow: 20px 0 0 #000, -20px 0 0 #000;
           box-shadow: 20px 0 0 #000, -20px 0 0 #000;
 }
@@ -1740,7 +1740,7 @@ h1, h2, h3, h4, h5,
   right: 0;
   bottom: 0;
   opacity: .5;
-  background: #000;
+   background: #232427;;
 } */
 
 .ftco-cover-1.overlay h1 {
@@ -2248,3 +2248,7 @@ h1, h2, h3, h4, h5,
 
 
 
+.testimonial-2{
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+  box-shadow: rgba(234, 112, 126, 0.555) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
