@@ -2,11 +2,11 @@
 <html lang="en">
   <meta charset="utf-8">
   <head>
-    <title>Car Rent &mdash; Free Website Template by Colorlib</title>
+    <title>Auto Leader &mdash;website in Tashkent</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="fonts/icomoon/style.css">
   
     <!-- abbas map  -->
@@ -16,13 +16,17 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!-- <link rel="stylesheet" href="./css/swiper.css"> -->
+    <link  rel="stylesheet"  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+    <!-- <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"> -->
+    <!-- <link rel="stylesheet" href="css/aos.css"> -->
     <link rel="stylesheet" href="./css//Abbas.css">
     <link rel="stylesheet" href="./css/jasur.css">
+    <link rel="stylesheet" href="./css/caruselss.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -48,8 +52,8 @@
                 <source src="./video/body.mp4" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
               </video>
-              <!-- <div class="header1_img"></div> -->
-              <img src="./images/hero_1.jpg" alt="" class="header1_img">
+
+              <img src="./images/autoleader.png" alt="" class="header1_img">
 
 
               </div>
@@ -59,10 +63,10 @@
     </div>
     <div class="links">
         <ul class="header_text">
-            <li class="active"><a href="index.html" style="--i: 0.1s" class="nav-link">Home</a></li>
-                  <li><a href="./cars.html" style="--i: 0.1s" class="nav-link">Cars</a></li>
-                  <li><a href="about.html" style="--i: 0.1s" class="nav-link">About</a></li>
-                  <li><a href="contact.html" style="--i: 0.1s" class="nav-link">Contact</a></li>
+            <li class="active"><a href="index.html" style="--i: 0.1s" class="nav-link">Главный</a></li>
+                  <li><a href="./cars.html" style="--i: 0.1s" class="nav-link">Машины</a></li>
+                  <li><a href="about.html" style="--i: 0.1s" class="nav-link">О нас</a></li>
+                  <li><a href="contact.html" style="--i: 0.1s" class="nav-link">Контакты</a></li>
                   <!-- <li><a href="jsan.html" style="--i: 0.1s" class="nav-link">json</a></li> -->
         </ul>
     </div>
@@ -70,50 +74,49 @@
   
   </div>
 
-
-
-  <!-- contact -->
-       <div class="row justify-content-center text-center" style=" background: #232427; position: relative;"> 
-        <div class="overlay12">
-          <h4 class="ov_h2" style="margin: auto;width:100%;text-align:center">Begin your trip here</h4>
-          <form class="ov_form" action="#" method="post">
-            <div class="ov_inp">
-              <p class="inp_text">Where you from</p>
-              <input type="text" class="inp" id="inp1"  placeholder="Your pickup address">
-            </div>
-            
-            <div class="ov_inp">
-              <p class="inp_text">Where you go</p>
-              <input type="text" class="inp" id="inp2" placeholder="Your drop-off address">
-            </div>
-            
-            <div class="ov_inp">
-              <p class="inp_text">Journey date</p>
-              <input type="text" class="inp" id="inp3"  placeholder="Your pickup address">
-            </div>
-            
-            <div class="ov_inp">
-              <p class="inp_text">Return date</p>
-              <input type="text" class="inp" id="inp4" placeholder="Your pickup address">
-            </div>
-
-            <button class="ov_btn">SUBMIT</button>
-          </form>
- 
-    </div> 
-</div>
-
+  <div class=""></div>
 
 <!-- card -->
 <div class="abbas__card">
-  <div class="container">
+  <div class="overlay12">
+  <h4 class="ov_h2" style="margin: auto;width:100%;text-align:center">Введите необходимую информацию <br> для себя</h4>
+  <form class="ov_form" action="#" method="post">
+    <div class="ov_inp">
+      <p class="inp_text">Напишите свои данные</p>
+      <input type="text" class="inp" id="inp1"  placeholder="и.ф.о"  required>
+    </div>
+    
+    <div class="ov_inp">
+      <p class="inp_text">Напишите свой номер</p>
+      <input type="number" class="inp" id="inp2" placeholder="тел" required>
+    </div>
+    
+    <div class="ov_inp">
+      <p class="inp_text">Какая машина вам нужен</p>
+      <input type="text" class="inp" id="inp3"  placeholder="напишите машину" required>
+    </div>
+    
+    <div class="ov_inp">
+      <p class="inp_text">Дата вашей покупки</p>
+      <input type="text" class="inp" id="inp4" placeholder="Дата вашей покупки" required>
+    </div>
+
+    <button class="ov_btn">Отправить</button>
+  </form>
+
+</div> 
+  <div class="container12">
+
     <div class="card" style=" background: #232427;">
       <div class="box" >
         <div class="content">
           <h2>01</h2>
-          <h3>Card One</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
-          <a href="#">Read More</a>
+          <h3>Служба расписания</h3>
+          <div class="text_btn">
+          <p>Мы думаем, что репутация нашего сервиса №1 в Скоттсдейле. Дайте нам шанс показать вам, почему.</p>
+          </div>
+          <button class="reads_btn">Читать далее</button>
+          <a href="./about.html#our_company" class="hr"><img src="./images/pereyti.png" style="width: 50px; height: 50px;" alt=""></a>
         </div>
       </div>
     </div>
@@ -122,20 +125,25 @@
       <div class="box">
         <div class="content">
           <h2>02</h2>
-          <h3>Card Two</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
-          <a href="#">Read More</a>
+          <h3>Что говорят наши недавние клиенты</h3>
+          <div class="text_btn2">
+          <p>Узнайте, что люди говорят о нас на популярных платформах отзывов.</p>
+          </div>
+          <button class="reads_btn2">Читать далее</button>
+          <a href="./about.html" class="hr"><img src="./images/pereyti.png" style="width: 50px; height: 50px;" alt=""></a>
         </div>
       </div>
     </div>
-  
     <div class="card" style=" background: #232427;">
       <div class="box" >
         <div class="content">
           <h2>03</h2>
-          <h3>Card Three</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
-          <a href="#">Read More</a>
+          <h3>Делайте покупки из Главныйа</h3>
+          <div class="text_btn3">
+          <p>Мы гордимся тем, что предлагаем конкурентоспособные цены, и прилагаем все усилия, чтобы оставить больше денег в вашем кармане.</p>
+          </div>
+          <button class="reads_btn3">Читать далее</button>
+          <a href="./cars.html" class="hr"><img src="./images/pereyti.png" style="width: 50px; height: 50px;" alt=""></a>
         </div>
       </div>
     </div>
@@ -149,438 +157,209 @@
 
 
 
-    <!-- carousel -->
-    <div class="slider__warpper" style="position: relative; width:90vw;margin-left:5vw; height:100vh;">
-      <div class="flex__container flex--pikachu flex--active" data-slide="1">
-        <div class="flex__item flex__item--left" >
-          <div class="flex__content " >
-            <p class="text--sub">Mersedez-Benz</p>
-            <h1 class="text--big">Mercedes Benz GLS 450</h1>
-            <p class="text--normal">
-              <table style="width:100%;">
-                <tr>
-                  <th>Release:</th>
-                  <th>2022</th>
-                </tr> <br>
-                <tr>
-                  <th>Mileage:</th>
-                  <th>No mileage</th>
-                </tr> <br>
-                <tr>
-                  <th>Engine capacity:</th>
-                  <th>3.0l</th>
-                </tr><br>
-                <tr>
-                  <th>Power:</th>
-                  <th>367 HP</th>
-                </tr> <br>
-                <tr>
-                  <th>Price:</th>
-                  <th>188 000 $</th>
-                </tr>
-              </table>
-            </p>
-          </div>
-          <p class="text__background">Mersedez</p>
-        </div>
-        <div class="flex__item flex__item--right" >
-        <img class="pokemon__img" src="./images/Mercedes Benz GLS 450/one-removebg-preview (1).png"  /></div>
-      </div>
-      <div class="flex__container flex--piplup animate--start" data-slide="2">
-        <div class="flex__item flex__item--left" >
-          <div class="flex__content">
-            <p class="text--sub">KIA K8</p>
-            <h1 class="text--big">KIA K8</h1>
-            <p class="text--normal"> <table style="width:100%; ">
-              <tr>
-                <th>Release:</th>
-                <th>2022</th>
-              </tr> <br>
-              <tr>
-                <th>Acceleration to 100:</th>
-                <th>6.9s</th>
-              </tr>
-              <tr>
-                <th>Engine capacity:</th>
-                <th>3.5l V6</th>
-              </tr><br>
-              <tr>
-                <th>Power:</th>
-                <th>300HP</th>
-              </tr> <br>
-              <tr>
-                <th>Price:</th>
-                <th>75 000$</th>
-              </tr>
-          </table></div>
-          <p class="text__background">KIA K8</p>
-        </div>
-        <div class="flex__item flex__item--right" >
-        <img class="pokemon__img" src="./images/acars/kiaK8.png" /></div>
-      </div>
-      <div class="flex__container flex--blaziken animate--start" data-slide="3">
-        <div class="flex__item flex__item--left" >
-          <div class="flex__content">
-            <p class="text--sub">Toyota</p>
-            <h1 class="text--big">Toyota Land Cruiser 300</h1>
-            <p class="text--normal"><table style="width:100%">
-              <tr>
-                <th>Release:</th>
-                <th>2022</th>
-              </tr> <br>
-              <tr>
-                <th>Acceleration to 100:</th>
-                <th>6.7s</th>
-              </tr>
-              <tr>
-                <th>Engine capacity:</th>
-                <th>3.5l Turbo</th>
-              </tr><br>
-              <tr>
-                <th>Power:</th>
-                <th>415HP</th>
-              </tr> <br>
-              <tr>
-                <th>Price:</th>
-                <th>135 000$</th>
-              </tr>
-            </table> </div>
-          <p class="text__background">Toyota</p>
-        </div>
-        <div class="flex__item flex__item--right" ></div>
-        <img class="pokemon__img" src="./images/acars/toyoytaa.png" />
-      </div>
-      <div class="flex__container flex--dialga animate--start" data-slide="4">
-        <div class="flex__item flex__item--left" >
-          <div class="flex__content">
-            <p class="text--sub">BMW</p>
-            <h1 class="text--big">BMW X6 4.0i</h1>
-            <p class="text--normal"><table style="width:100%">
-              <tr>
-                <th>Release:</th>
-                <th>2021</th>
-              </tr> <br>
-              <tr>
-                <th>Acceleration to 100:</th>
-                <th>5.5 s</th>
-              </tr>
-              <tr>
-                <th>Engine capacity:</th>
-                <th>3.0l</th>
-              </tr><br>
-              <tr>
-                <th>Power:</th>
-                <th>340 HP</th>
-              </tr> <br>
-              <tr>
-                <th>Price:</th>
-                <th>142 000 $</th>
-              </tr>
-            </table></p>
-          </div>
-          <p class="text__background">BMW</p>
-        </div>
-        <div class="flex__item flex__item--right" >
-        <img class="pokemon__img" src="./images/BMW X6 4.0i/one-removebg-preview (2).png" /></div>
-      </div>
-      <div class="flex__container flex--zekrom animate--start" data-slide="5">
-        <div class="flex__item flex__item--left" >
-          <div class="flex__content">
-            <p class="text--sub">Tesla</p>
-            <h1 class="text--big">TESLA MODEL S PLAID </h1>
-            <p class="text--normal"><table style="width:100%; margin-top: -80px; ">
-              <tr>
-                <th>Release:</th>
-                <th>2021</th>
-              </tr> <br>
-              <tr>
-                <th>Dual Motor</th>
-                <th>Long Range</th>
-              </tr> <br>
-              <tr>
-                <th>Power reserve</th>
-                <th>540 km</th>
-              </tr> <br>
-              <tr>
-                <th>Engine capacity:</th>
-                <th>3.0l</th>
-              </tr><br>
-              <tr>
-                <th>Max speed</th>
-                <th>230 km/h</th>
-              </tr> <br>
-              <tr>
-                <th>Price:</th>
-                <th>210 000 $</th>
-              </tr>
-            </table></p>
-          </div>
-          <p class="text__background">Tesla</p>
-        </div>
-        <div class="flex__item flex__item--right" >
-        <img class="pokemon__img" src="./images/Tesla Model S Plaid/one.png" /></div>
-      </div><div class="slider__navi">
-      <a href="#" class="slide-nav active" data-slide="1">mersedez</a>
-      <a href="#" class="slide-nav" data-slide="2">kia</a>
-      <a href="#" class="slide-nav" data-slide="3">toyota</a>
-      <a href="#" class="slide-nav" data-slide="4">dialga</a>
-      <a href="#" class="slide-nav" data-slide="5">zekrom</a>
-    </div>
-    </div>
+<div class="container">
     
-    
-    <!-- abbas carousel -->
-    <!-- <div class="body">
-      <div class="slider__warpper">
-        <div class="flex__container flex--pikachu flex--active" data-slide="1">
-          <div class="flex__item flex__item--left">
-            <div class="flex__content">
-
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="flex__container flex--pikachu flex--active" id="" data-slide="1">
+          <div class="flex__item flex__item--left" >
+            <div class="flex__content " >
               <p class="text--sub">Mersedez-Benz</p>
               <h1 class="text--big">Mercedes Benz GLS 450</h1>
-              <p class="text--normal"><table style="width:100%">
               <p class="text--normal">
-                <table style="width:100%; margin-top: -80px;">
-
-                <tr>
-                  <th>Release:</th>
-                  <th>2022</th>
-                </tr> <br>
-                <tr>
-                  <th>Mileage:</th>
-                  <th>No mileage</th>
-                </tr> <br>
-                <tr>
-                  <th>Engine capacity:</th>
-                  <th>3.0l</th>
-                </tr><br>
-                <tr>
-                  <th>Power:</th>
-                  <th>367 HP</th>
-                </tr> <br>
-                <tr>
-                  <th>Price:</th>
-                  <th>188 000 $</th>
-                </tr>
-              </table></p>
-            </div>
-          </div>
-          <div class="flex__item flex__item--right"></div>
-
-          <img class="pokemon__img" src="./images/Mercedes Benz GLS 450/one-removebg-preview (1).png" alt="" />
-
-
-
-        </div>
-        <div class="flex__container flex--piplup animate--start" data-slide="2">
-          <div class="flex__item flex__item--left">
-            <div class="flex__content">
-
-              <p class="text--sub">KIA</p>
-              <h1 class="text--big" style="margin-top: 10%;">KIA K8</h1>
-              <p class="text--normal" style="margin-top: -2%;">
-                 <table style="width:100%; ">
+                <table class="table-text">
                   <tr>
-                    <th>Release:</th>
+                    <th>Выпуск:</th>
                     <th>2022</th>
                   </tr> <br>
                   <tr>
-                    <th>Acceleration to 100:</th>
-                    <th>6.9s</th>
-                  </tr>
-                  <tr>
-                    <th>Engine capacity:</th>
-                    <th>3.5l V6</th>
-                  </tr><br>
-                  <tr>
-                    <th>Power:</th>
-                    <th>300HP</th>
+                    <th>Пробег:</th>
+                    <th>Безпробега</th>
                   </tr> <br>
                   <tr>
-                    <th>Price:</th>
-                    <th>75 000$</th>
+                    <th>Мощность:</th>
+                    <th>3.0l</th>
+                  </tr><br>
+                  <tr>
+                    <th>Сила:</th>
+                    <th>367 HP</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Цена:</th>
+                    <th>188 000 $</th>
                   </tr>
-              </table>
-            </p>
-
+                </table>
+              </p>
             </div>
           </div>
-          <div class="flex__item flex__item--right"></div>
-          <img class="pokemon__img" src="./images/acars/kiaK8.png" alt="" />
-        </div>
-        <div class="flex__container flex--blaziken animate--start" data-slide="3">
-          <div class="flex__item flex__item--left">
-            <div class="flex__content">
-              <p class="text--sub">Toyota</p>
-              <h1 class="text--big">Toyota Land Cruiser 300</h1>
-              <p class="text--normal"> <table style="width:100%">
-                <tr>
-                  <th>Release:</th>
-                  <th>2022</th>
-                </tr> <br>
-                <tr>
-                  <th>Acceleration to 100:</th>
-                  <th>6.7s</th>
-                </tr>
-                <tr>
-                  <th>Engine capacity:</th>
-                  <th>3.5l Turbo</th>
-                </tr><br>
-                <tr>
-                  <th>Power:</th>
-                  <th>415HP</th>
-                </tr> <br>
-                <tr>
-                  <th>Price:</th>
-                  <th>135 000$</th>
-                </tr>
-              </table></p>
-            </div>
-          </div>
-          <div class="flex__item flex__item--right"></div>
-          <img class="pokemon__img" src="./images/acars/toyoytaa.png" alt=""/>
-        </div 
-        <div class="flex__container flex--dialga animate--start" data-slide="4">
-          <div class="flex__item flex__item--left">
-            <div class="flex__content">
-              <p class="text--sub">BMW</p>
-              <h1 class="text--big">BMW X6 4.0i</h1>
-              <p class="text--normal"> <table style="width:100%">
-                <tr>
-                  <th>Release:</th>
-                  <th>2021</th>
-                </tr> <br>
-                <tr>
-                  <th>Acceleration to 100:</th>
-                  <th>5.5 s</th>
-                </tr>
-                <tr>
-                  <th>Engine capacity:</th>
-                  <th>3.0l</th>
-                </tr><br>
-                <tr>
-                  <th>Power:</th>
-                  <th>340 HP</th>
-                </tr> <br>
-                <tr>
-                  <th>Price:</th>
-                  <th>142 000 $</th>
-                </tr>
-              </table></p>
-            </div>
-          </div>
-          <div class="flex__item flex__item--right"></div>
-          <img class="pokemon__img" src="./images/BMW X6 4.0i/one-removebg-preview (2).png" alt="" />
-        </div>
-        
-        <div class="flex__container flex--zekrom animate--start" data-slide="5">
-          <div class="flex__item flex__item--left">
-            <div class="flex__content">
-              <p class="text--sub">Tesla</p>
-              <h1 class="text--big">TESLA MODEL S PLAID </h1>
-              <p class="text--normal"> <table style="width:100%; margin-top: -80px; ">
-                <tr>
-                  <th>Release:</th>
-                  <th>2021</th>
-                </tr> <br>
-                <tr>
-                  <th>Dual Motor</th>
-                  <th>Long Range</th>
-                </tr> <br>
-                <tr>
-                  <th>Power reserve</th>
-                  <th>540 km</th>
-                </tr> <br>
-                <tr>
-                  <th>Engine capacity:</th>
-                  <th>3.0l</th>
-                </tr><br>
-                <tr>
-                  <th>Max speed</th>
-                  <th>230 km/h</th>
-                </tr> <br>
-                <tr>
-                  <th>Price:</th>
-                  <th>210 000 $</th>
-                </tr>
-              </table></p>
-            </div>
-          </div>
-          <div class="flex__item flex__item--right"></div>
-          <img class="pokemon__img" src="./images/Tesla Model S Plaid/one.png" alt="" />
-       </div> 
-         <div class="slider__navi">
-        <a href="#" class="slide-nav active" data-slide="1">BMW</a>
-        <a href="#" class="slide-nav" data-slide="2">Rolls-Royce</a>
-        <a href="#" class="slide-nav" data-slide="3">Gelik</a>
-        <a href="#" class="slide-nav" data-slide="4">Prado</a>
-        <a href="#" class="slide-nav" data-slide="5">Tesla</a>
-      </div> 
-      </div>
-    </div> -->
- 
-
-
-
-    <!-- Our services -->
-    <!-- <div class="site-section section-3" style="background-image: url('https://img1.goodfon.com/wallpaper/nbig/e/50/novyy-asfalt-asfalt-doroga.jpg');">
-      <div class="container">
-        <div class="row">
-          
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="flaticon-car-1"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Repair</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="flaticon-traffic"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Car Accessories</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="service-1">
-              <span class="service-1-icon">
-                <span class="flaticon-valet"></span>
-              </span>
-              <div class="service-1-contents">
-                <h3>Own a Car</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-              </div>
-            </div>
-          </div>
+          <div class="flex__item flex__item--right" >
+          <img class="pokemon__img" src="https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_low/v1/editorial/vhs/2021-mercedes-gls-index.png"  /></div>
         </div>
       </div>
-    </div> -->
+      <div class="swiper-slide">
+        <div class="flex__container flex--pikachu flex--active" id="" data-slide="1">
+          <div class="flex__item flex__item--left" >
+            <div class="flex__content " >
+              <p class="text--sub">Mersedez-Benz</p>
+              <h1 class="text--big">Mercedes Benz GLS 450</h1>
+              <p class="text--normal">
+                <table class="table-text">
+                  <tr>
+                    <th>Выпуск:</th>
+                    <th>2022</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Пробег:</th>
+                    <th>Безпробега</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Мощность:</th>
+                    <th>3.0l</th>
+                  </tr><br>
+                  <tr>
+                    <th>Сила:</th>
+                    <th>367 HP</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Цена:</th>
+                    <th>188 000 $</th>
+                  </tr>
+                </table>
+              </p>
+            </div>
+          </div>
+          <div class="flex__item flex__item--right" >
+          <img class="pokemon__img" src="https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_low/v1/editorial/vhs/2021-mercedes-gls-index.png"  /></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="flex__container flex--pikachu flex--active" id="" data-slide="1">
+          <div class="flex__item flex__item--left" >
+            <div class="flex__content " >
+              <p class="text--sub">Mersedez-Benz</p>
+              <h1 class="text--big">Mercedes Benz GLS 450</h1>
+              <p class="text--normal">
+                <table class="table-text">
+                  <tr>
+                    <th>Выпуск:</th>
+                    <th>2022</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Пробег:</th>
+                    <th>Безпробега</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Мощность:</th>
+                    <th>3.0l</th>
+                  </tr><br>
+                  <tr>
+                    <th>Сила:</th>
+                    <th>367 HP</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Цена:</th>
+                    <th>188 000 $</th>
+                  </tr>
+                </table>
+              </p>
+            </div>
+          </div>
+          <div class="flex__item flex__item--right" >
+          <img class="pokemon__img" src="./images/mersedez gls 200/two.jpg"  /></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="flex__container flex--pikachu flex--active" id="" data-slide="1">
+          <div class="flex__item flex__item--left" >
+            <div class="flex__content " >
+              <p class="text--sub">Mersedez-Benz</p>
+              <h1 class="text--big">BMW X7 xDrive 40i</h1>
+              <p class="text--normal">
+                <table class="table-text">
+                  <tr>
+                    <th>Выпуск:</th>
+                    <th>2019</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Пробег:</th>
+                    <th>5.068 км</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Мощность:</th>
+                    <th>340л.с</th>
+                  </tr><br>
+                  <tr>
+                    <th>Цена:</th>
+                    <th>148 000 $</th>
+                  </tr>
+                </table>
+              </p>
+            </div>
+          </div>
+          <div class="flex__item flex__item--right" >
+          <img class="pokemon__img" src="./images/bmw x7.png"  /></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="flex__container flex--pikachu flex--active" id="" data-slide="1">
+          <div class="flex__item flex__item--left" >
+            <div class="flex__content " >
+              <p class="text--sub">Mersedez-Benz</p>
+              <h1 class="text--big">Mercedes Benz CLA 200</h1>
+              <p class="text--normal">
+                <table class="table-text">
+                  <tr>
+                    <th>Выпуск:</th>
+                    <th>2019</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Пробег:</th>
+                    <th>39.896км</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Мощность:</th>
+                    <th>150лл.с</th>
+                  </tr><br>
+                  <tr>
+                    <th>Расход:</th>
+                    <th>5.7 л</th>
+                  </tr> <br>
+                  <tr>
+                    <th>Цена:</th>
+                    <th>62 000 $</th>
+                  </tr>
+                </table>
+              </p>
+            </div>
+          </div>
+          <div class="flex__item flex__item--right" >
+          <img class="pokemon__img" src="./images/mmersgls2001-removebg-preview.png"  /></div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
+</div>
+
+
+
+</div>
 
   <!-- Customer Testimony -->
-  <div class="site-section " style=" background: #232427;">
+  <div class="site-section " style="background-color: #2c2c2c;">
     <div class="container">
       <div class="row justify-content-center text-center mb-5">
-        <div class="col-7 text-center mb-5 " style="color: white;">
-          <h2>Customer Testimony</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+        <div class="col-8 text-center mb-5 " style="color: white;">
+          <h2>Свидетельство клиента</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-4 mb-4 mb-lg-0">
           <div class="testimonial-2">
             <blockquote class="mb-4">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              <p>"Автомобили в этом салоне очень хорошие, а автомобили повышенной комфортности по очень хорошей цене."</p>
             </blockquote>
             <div class="d-flex v-card align-items-center">
               <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
@@ -591,10 +370,10 @@
         <div class="col-lg-4 mb-4 mb-lg-0">
           <div class="testimonial-2">
             <blockquote class="mb-4">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              <p>"Купил машину в этом автосалоне и не жалею машина очень понравилась и машина в отличным состоянии"</p>
             </blockquote>
             <div class="d-flex v-card align-items-center">
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
+              <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
               <span>Jean Stanley</span>
             </div>
           </div>
@@ -602,10 +381,10 @@
         <div class="col-lg-4 mb-4 mb-lg-0">
           <div class="testimonial-2">
             <blockquote class="mb-4">
-              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+              <p>"Купил машину в этом автосалоне и не жалею машина очень понравилась и машина в отличным состоянии"</p>
             </blockquote>
             <div class="d-flex v-card align-items-center">
-              <img src="images/person_3.jpg" alt="Image" class="img-fluid mr-3">
+              <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
               <span>Katie Rose</span>
             </div>
           </div>
@@ -617,11 +396,11 @@
 
 
     <!-- How it works -->
-    <div class="container site-section " >
+    <div class="container site-section" > 
       <div class="row justify-content-center text-center">
         <div class="col-7 how-it-works-lorems text-center mb-5">
-          <h2>How it works</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+          <h2>Как мы работаем</h2>
+          <p>Здесь вы поймете, что делать шаг за шагом здесь</p>
         </div>
       </div>
       <div class="how-it-works d-flex">
@@ -646,21 +425,17 @@
     </div>
 
 
-    
-    
-
-
 
   
 
     <!-- Our Blog -->
 
     <div class="site-section bg-white">
-      <div class="container">
+      <div class="container" id="how_it_works">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-7 text-center mb-5">
-            <h2>Our Blog</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
+            <h2>Наш блог</h2>
+            <p>Вы нашем блоге вы узнаете мнение наших клиентов</p>
           </div>
         </div>
 
@@ -673,9 +448,9 @@
               </a>
               <div class="post-entry-1-contents">
                 
-                <h2><a href="single.html">The best car rent in the entire planet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
+                <h2><a href="single.html">Лучший  автомобилей на всей планете</a></h2>
+                <span class="meta d-inline-block mb-3">17 июля 2022 г. <span class="mx-2">by</span> <a href="#">покупатель</a></span>
+                <p>Автомобили в этом салоне очень хорошие, а автомобили повышенной комфортности по очень хорошей цене.</p>
               </div>
             </div>
           </div>
@@ -687,9 +462,9 @@
               </a>
               <div class="post-entry-1-contents">
                 
-                <h2><a href="single.html">The best car rent in the entire planet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
+                <h2><a href="single.html">Лучший автомобил на всей планете</a></h2>
+                <span class="meta d-inline-block mb-3">10 июля 2022 г. <span class="mx-2">by</span> <a href="#">покупатель</a></span>
+                <p>Купил машину в этом автосалоне и не жалею машина очень понравилась и машина в отличным состоянии</p>
               </div>
             </div>
           </div>
@@ -697,14 +472,14 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
               <a href="single.html">
-                <img src="images/img_3.jpg" alt="Image"
+                <img src="images/img_3.jpg" alt="Image" 
                  class="img-fluid">
               </a>
               <div class="post-entry-1-contents">
                 
-                <h2><a href="single.html">The best car rent in the entire planet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
+                <h2><a href="single.html">Лучший  автомобилей на всей планете</a></h2>
+                <span class="meta d-inline-block mb-3">05 июля 2022 г. <span class="mx-2">by</span> <a href="#">покупатель</a></span>
+                <p>Мне очень нравится этот автосалон, много раз арендовал машину в этом автосалоне.</p>
               </div>
             </div>
           </div>
@@ -714,163 +489,133 @@
 
 
  <!--  -->
-<!-- abbas footer -->
-    <footer class="site-footer">
-      <div id="YMapsID" class="YMapsID"></div>
-      <div class="container">
-              <div class="row">
-                <div class="col-lg-3">
-                  <h2 class="footer-heading mb-4">About Us</h2>
-                      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                </div>
-                <div class="col-lg-8 ml-auto">
-                  <div class="row">
-                    <div class="col-lg-3">
-                      <h2 class="footer-heading mb-4">Quick Links</h2>
-                      <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-3">
-                      <h2 class="footer-heading mb-4">Quick Links</h2>
-                      <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-3">
-                      <h2 class="footer-heading mb-4">Quick Links</h2>
-                      <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-3">
-                      <h2 class="footer-heading mb-4">Quick Links</h2>
-                      <ul class="list-unstyled">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script>
+      ymaps.ready(function () { 
+     
+     var myMap = new ymaps.Map("YMapsID", {
+         center: [41.26206298333419, 69.22858180426906],
+         zoom: 11,
+     });
+    
+     // создание маркера
+     var myPlacemark = new ymaps.Placemark([41.26206298333419, 69.22858180426906], {
+        content: 'название маркера',
+        balloonContent: 'html-контент',
+     });
+    
+     // добавление маркера на карту
+     myMap.geoObjects.add(myPlacemark);
+     
+    });
+    </script>
+        <footer class="site-footer">
+    <div id="YMapsID" class="YMapsID"></div>
+    <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <h2 class="footer-heading mb-4">О нас</h2>
+                    <p>аш автосалон удовлетворил спрос многих клиентов и достиг больших масштабов. Мы гарантируем наш автомобиль для аренды или продажи.</p>
               </div>
-              <div class="row pt-5 mt-5 text-center">
-                <div class="col-md-12">
-                  <div class="border-top pt-5">
-                    <p>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="#!" target="_blank" >Colorlib</a>
-                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                  </p>
+              <div class="col-lg-8 ml-auto">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <h2 class="footer-heading mb-4">Быстрые ссылки</h2>
+                    <ul class="list-unstyled">
+                      <li><a href="./about.html">О нас</a></li>
+                      <li><a href="./contact.html">Отзывы</a></li>
+                      <li><a href="#how_it_works">условия обслуживания</a></li>
+                      <li><a href="./index.html">Конфиденциальность</a></li>
+                      <li><a href="./contact.html">Свяжитесь с нами</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <h2 class="footer-heading mb-4">Быстрые ссылки</h2>
+                    <ul class="list-unstyled">
+                      <li><a href="./about.html">О нас</a></li>
+                      <li><a href="./contact.html">Отзывы</a></li>
+                      <li><a href="#how_it_works">условия обслуживания</a></li>
+                      <li><a href="./index.html">Конфиденциальность</a></li>
+                      <li><a href="./contact.html">Свяжитесь с нами</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <h2 class="footer-heading mb-4">Быстрые ссылки</h2>
+                    <ul class="list-unstyled">
+                      <li><a href="./about.html">О нас</a></li>
+                      <li><a href="./contact.html">Отзывы</a></li>
+                      <li><a href="#how_it_works">условия обслуживания</a></li>
+                      <li><a href="./index.html">Конфиденциальность</a></li>
+                      <li><a href="./contact.html">Свяжитесь с нами</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3">
+                    <h2 class="footer-heading mb-4">Быстрые ссылки</h2>
+                    <ul class="list-unstyled">
+                      <li><a href="./about.html">О нас</a></li>
+                      <li><a href="./contact.html">Отзывы</a></li>
+                      <li><a href="#how_it_works">условия обслуживания</a></li>
+                      <li><a href="./index.html">Конфиденциальность</a></li>
+                      <li><a href="./contact.html">Свяжитесь с нами</a></li>
+                    </ul>
                   </div>
                 </div>
-      
               </div>
             </div>
-          </footer>
+            <div class="row pt-5 mt-5 text-center">
+              <div class="col-md-12">
+                <div class="border-top pt-5">
+                  <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="#!" target="_blank" >AutoLeader</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </footer>
 
-          <script>
-            ymaps.ready(function () { 
-           
-           var myMap = new ymaps.Map("YMapsID", {
-               center: [41.292071, 69.362916],
-               zoom: 11,
-           });
+   
+          <script>$('.slide-nav').on('click', function(e) {
+            e.preventDefault();
+            // get current slide
+            var current = $('.flex--active').data('slide'),
+              // get button data-slide
+              next = $(this).data('slide');
           
-           // создание маркера
-           var myPlacemark = new ymaps.Placemark([41.292071, 69.362916], {
-              content: 'название маркера',
-              balloonContent: 'html-контент',
-           });
+            $('.slide-nav').removeClass('active');
+            $(this).addClass('active');
           
-           // добавление маркера на карту
-           myMap.geoObjects.add(myPlacemark);
-           
+            if (current === next) {
+              return false;
+            } else {
+              $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+              $('.flex--active').addClass('animate--end');
+              setTimeout(function() {
+                $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+                $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+              }, 800);
+            }
           });
-          </script>
-</div> 
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-   
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-   
-    <script>$('.slide-nav').on('click', function(e) {
-      e.preventDefault();
-      // get current slide
-      var current = $('.flex--active').data('slide'),
-        // get button data-slide
-        next = $(this).data('slide');
-    
-      $('.slide-nav').removeClass('active');
-      $(this).addClass('active');
-    
-      if (current === next) {
-        return false;
-      } else {
-        $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
-        $('.flex--active').addClass('animate--end');
-        setTimeout(function() {
-          $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-          $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-        }, 800);
-      }
-    });
-  </script>
-    <script src="js/aos.js"></script>
-    <script src="./js/abbas.js"></script>
-    <script src="./js/jasur.js"></script>
-    <script src="js/main.js"></script><script src="js/owl.carousel.min.js"></script> 
+        </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      let form2 = document.querySelector('.ov_form');
-      let inp_1 = document.querySelector('#inp1')
-      let inp_2 = document.querySelector('#inp2')
-      let inp_3 = document.querySelector('#inp3')
-      let inp_4 = document.querySelector('#inp4')
+    <script src="./js/jasur.js"></script>
+    <script src="./js/abbas.js"></script>
+    <script src="./js/json.js"></script>
+    <script src="./js/diyor.js"></script>
+    <script src="./js/sanjar.js"></script>
+    <script src="./js/carusel.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://kit.fontawesome.com/2d808759a2.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/js.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-      form2.addEventListener('submit', (e) => {
-        e.preventDefault()
 
-        console.log('from:  ' + inp_1.value + '   go:  ' + inp_2.value + '   date:  ' + ' ' + inp_3.value + '   return date:  ' + inp_4.value);
-       
-      })
-  
-      $(document).ready(function(){
-      $("form").submit(function(){
-        $.get('https://api.telegram.org/bot5120350440:AAEOMxHDMXN7ER_f6nU8szCh-7ih-poBqXI/sendMessage?chat_id=1520593027&&text='+`${'from:  ' + inp_1.value + '   go:  ' + inp_2.value + '   date:  ' + ' ' + inp_3.value + '   return date:  ' + inp_4.value}`, function(data, status){
-        alert("отправленное сообщение");
-        
-        inp_1.value = ''
-        inp_2.value = ''
-        inp_3.value = ''
-        inp_4.value = ''
-      });
-    });
-  });
-  </script>
-
-  </body>
-
+</body>
 </html>
 

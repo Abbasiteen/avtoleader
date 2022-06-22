@@ -1,7 +1,7 @@
 var myPlacemark = new ymaps.GeoObject({
     geometry: {
         type: "Point",
-        coordinates: [55.76, 37.56]
+        coordinates: [41.26206298333419, 69.228581804269060]
     }
 });
-var myPlacemark = new ymaps.Placemark([55.8, 37.6]);
+var myPlacemark = new ymaps.Placemark([41.26206298333419, 69.228581804269060]);
